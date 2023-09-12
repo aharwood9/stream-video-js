@@ -8,11 +8,11 @@ import TabItem from '@theme/TabItem';
 
 This guide discusses how to add push notifications to your project. It will discuss both Android and iOS and go through all the necessary steps.
 
-The normal user experience in a ringing app, when a user receives a call, is to show a push notification. The user can then interact with the notification to accept or reject the call. In this guide, you will learn how to set up your React Native app to get push notifications from Stream for the incoming calls that your user will receive. 
+The normal user experience in a ringing app, when a user receives a call, is to show a push notification. The user can then interact with the notification to accept or reject the call. In this guide, you will learn how to set up your React Native app to get push notifications from Stream for the incoming calls that your user will receive.
 
-| Android preview | iOS preview |
-|---|---|
-| ![Android preview of the Firebase push notification](../../assets/06-advanced/04-push-notifications/android-preview.png) | ![iOS preview of VoIP notification using Apple Push Notification service (APNs)](../../assets/06-advanced/04-push-notifications/ios-preview.png)
+| Android preview                                                                                                          | iOS preview                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Android preview of the Firebase push notification](../../assets/06-advanced/04-push-notifications/android-preview.png) | ![iOS preview of VoIP notification using Apple Push Notification service (APNs)](../../assets/06-advanced/04-push-notifications/ios-preview.png) |
 
 ## Add push provider credentials to Stream
 
@@ -118,7 +118,7 @@ We need to configure the Firebase library, set up the callkeep library and regis
   // add your app name here
   // highlight-start
   [RNCallKeep setup:@{
-    @"appName": @"My awesome app"
+    @"appName": @"My awesome app",
     @"supportsVideo": @YES,
     // pass @YES here if you want the call to be shown in calls history in the built-in dialer app
     @"includesCallsInRecents": @NO,
